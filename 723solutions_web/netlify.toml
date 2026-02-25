@@ -1,0 +1,3 @@
+[build]
+  # Force Netlify to always build regardless of git diff
+  ignore = "false"
