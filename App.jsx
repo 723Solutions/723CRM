@@ -1871,6 +1871,7 @@ const CRMContactsModule = ({ crmData, updateCrmData }) => {
                 });
               }
             }
+            delete nc.companyName; // IMPORTANT: Prevent Supabase 400 Bad Request schema mismatch 
           });
 
           updateCrmData({
